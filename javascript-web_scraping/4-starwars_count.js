@@ -22,6 +22,7 @@ request(apiBaseUrl, (error, response, body) => {
         }
       }
     }
+
     // Imprime el número de películas en las que aparece "Wedge Antilles"
     console.log(count);
   }
