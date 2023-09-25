@@ -13,7 +13,7 @@ request(apiUrl, (error, response, body) => {
     const completedTasksByUser = {};
 
     for (const task of tasks) {
-      if (task.completed) {
+      if (task.completed === true) {
         if (completedTasksByUser[task.userId]) {
           completedTasksByUser[task.userId]++;
         } else {
