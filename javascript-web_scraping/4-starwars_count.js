@@ -2,7 +2,7 @@
 
 const request = require('request');
 const apiBaseUrl = process.argv[2];
-const characterId = "18";
+const characterId = '18';
 
 request(apiBaseUrl, (error, response, body) => {
   if (error) {
@@ -22,7 +22,6 @@ request(apiBaseUrl, (error, response, body) => {
         }
       }
     }
-
     // Imprime el número de películas en las que aparece "Wedge Antilles"
     console.log(count);
   }
