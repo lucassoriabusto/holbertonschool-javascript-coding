@@ -11,7 +11,7 @@ function countStudents(path) {
     const fieldCS = [];
     const fieldSWE = [];
 
-    for (let i = 1; i < lines.length - 1; i++) {
+    for (let i = 1; i < lines.length - 1; i += 1) {
       const line = lines[i].split(',');
 
       // Extrae los campos
