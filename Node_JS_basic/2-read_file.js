@@ -16,8 +16,8 @@ function countStudents(path) {
 
       // Extrae los campos
       const firstname = line[0];
-      //const lastname = line[1];
-      //const age = line[2];
+      // const lastname = line[1];
+      // const age = line[2];
       const field = line[3];
 
       // Agrega el nombre a la lista de nombres
@@ -36,7 +36,6 @@ function countStudents(path) {
     // Imprime el número de estudiantes en cada campo y la lista de nombres
     console.log(`Number of students in CS: ${fieldCS.length}. List: ${fieldCS.join(', ')}`);
     console.log(`Number of students in SWE: ${fieldSWE.length}. List: ${fieldSWE.join(', ')}`);
-
   } catch (error) {
     throw new Error('Cannot load the database');
   }
